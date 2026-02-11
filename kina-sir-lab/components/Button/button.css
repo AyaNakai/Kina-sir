@@ -1,4 +1,18 @@
-.btn {
+.btn{
+  padding: var(--space-buttonPadding);
+  border-radius: var(--radius-button);
+  font-size: var(--font-buttonSize);
+  border: none;
+}
+
+.btn--default{ background: var(--color-default); }
+.btn--accent{ background: var(--color-accent); }
+
+.btn:disabled{
+  background: var(--color-disabled);
+  cursor: not-allowed;
+}
+/* .btn {
   padding: 12px 16px;
   border-radius: 9999px;
   border: none;
@@ -14,22 +28,14 @@
 .btn--accent {
   background: #ff2b79;
   color: #fff;
-}
+} */
 
 /* disabled は variant に依存しない */
-.btn:disabled {
+/* .btn:disabled {
   background: #e6e6e6;
   color: #888;
   cursor: not-allowed;
-}
-
-.button {
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  background: #fff;
-  cursor: pointer;
-}
+} */
 
 
 /* .storybook-button {

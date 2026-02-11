@@ -1,0 +1,46 @@
+{
+  "color": {
+    "default": {
+      "attributes": {
+        "category": "color"
+      },
+      "value": "#f6b914"
+    },
+    "accent": {
+      "attributes": {
+        "category": "color"
+      },
+      "value": "#f61463"
+    },
+    "disabled": {
+      "attributes": {
+        "category": "color"
+      },
+      "value": "#d2e0f4"
+    }
+  },
+  "radius": {
+    "button": {
+      "attributes": {
+        "type": "number"
+      },
+      "value": 50
+    }
+  },
+  "font": {
+    "buttonSize": {
+      "attributes": {
+        "type": "number"
+      },
+      "value": 12
+    }
+  },
+  "space": {
+    "buttonPadding": {
+      "attributes": {
+        "type": "number"
+      },
+      "value": 40
+    }
+  }
+}

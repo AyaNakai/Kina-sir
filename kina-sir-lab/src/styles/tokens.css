@@ -1,0 +1,8 @@
+:root{
+  --color-default: #f6b914;
+  --color-accent: #f61463;
+  --color-disabled: #d2e0f4;
+  --radius-button: 50px;
+  --font-buttonSize: 12px;
+  --space-buttonPadding: 40px;
+}
