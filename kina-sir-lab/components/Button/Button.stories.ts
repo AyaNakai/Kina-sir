@@ -2,16 +2,29 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
 
 const meta: Meta<typeof Button> = {
-  title: "Components/Button",
+  title: "Components/Btn",
   component: Button,
   args: {
-    label: "イェェぇぇ",
+    label: "Hello",
+    color: "default",
+    disabled: false,
+  },
+  argTypes: {
+    color: {
+      control: "select",
+      options: ["default", "accent"],
+    },
+    disabled: {
+      control: "boolean",
+    },
   },
 };
 export default meta;
 
 type Story = StoryObj<typeof Button>;
-export const Default: Story = {};
+export const Playground: Story = {};
+
+
 // import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
 // import { fn } from 'storybook/test';

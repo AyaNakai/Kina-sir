@@ -1,12 +1,24 @@
 import './button.css';
 
+export type ButtonColor = "default" | "accent";
+
 type Props = {
   label: string;
+  color?: ButtonColor;
+  disabled?: boolean;
 };
 
 
-export function Button({ label }: Props) {
-  return <button className="button">{label}</button>;
+export function Button({
+  label,
+  color = "default",
+  disabled = false,
+}: Props) {
+  return (
+    <button className={`btn btn--${color}`} disabled={disabled}>
+      {label}
+    </button>
+  );
 }
 
 // export interface ButtonProps {
