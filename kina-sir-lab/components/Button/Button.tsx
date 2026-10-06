@@ -1,21 +1,32 @@
+import type { ButtonHTMLAttributes } from "react";
 import './button.css';
 
 export type ButtonColor = "default" | "accent";
+export type ButtonSize = "small" | "medium" | "large";
 
-type Props = {
+type Props = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> & {
   label: string;
   color?: ButtonColor;
-  disabled?: boolean;
+  primary?: boolean;
+  size?: ButtonSize;
 };
-
 
 export function Button({
   label,
   color = "default",
+  primary = false,
+  size = "medium",
   disabled = false,
+  ...buttonProps
 }: Props) {
+  const variant = primary ? "accent" : color;
+
   return (
-    <button className={`btn btn--${color}`} disabled={disabled}>
+    <button
+      className={`btn btn--${variant} btn--${size}`}
+      disabled={disabled}
+      {...buttonProps}
+    >
       {label}
     </button>
   );

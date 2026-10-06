@@ -4,6 +4,11 @@ import './header.css';
 type User = {
   name: string;
 };
+type Props = {
+  label: string;
+  onClick?: () => void;
+  size?: "small" | "medium" | "large";
+};
 
 export interface HeaderProps {
   user?: User;

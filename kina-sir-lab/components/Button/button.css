@@ -1,14 +1,30 @@
-.btn{
+.btn {
   padding: var(--space-buttonPadding);
   border-radius: var(--radius-button);
   font-size: var(--font-buttonSize);
   border: none;
+  cursor: pointer;
 }
 
-.btn--default{ background: var(--color-default); }
-.btn--accent{ background: var(--color-accent); }
+.btn--default { background: var(--color-default); }
+.btn--accent { background: var(--color-accent); }
 
-.btn:disabled{
+.btn--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+
+.btn--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+
+.btn--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.btn:disabled {
   background: var(--color-disabled);
   cursor: not-allowed;
 }
